@@ -1,0 +1,6 @@
+id; id -un; pwd
+[root@localhost .in]# id; id -un; pwd
+uid=0(root) gid=0(root) groups=0(root)
+root
+/.in
+[root@localhost .in]# logout

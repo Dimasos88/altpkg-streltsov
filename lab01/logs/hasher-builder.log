@@ -1,0 +1,7 @@
+id; id -un; pwd; which tree
+[builder@localhost .in]$ id; id -un; pwd; which tree
+uid=1002(builder) gid=1002(builder) groups=1002(builder)
+builder
+/.in
+/usr/bin/tree
+[builder@localhost .in]$ logout

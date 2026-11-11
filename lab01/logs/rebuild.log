@@ -1,0 +1,51 @@
+<86>Nov 11 13:52:00 userdel[16967]: delete user 'rooter'
+<86>Nov 11 13:52:00 userdel[16967]: removed group 'rooter' owned by 'rooter'
+<86>Nov 11 13:52:00 userdel[16967]: removed shadow group 'rooter' owned by 'rooter'
+<86>Nov 11 13:52:00 groupadd[16974]: group added to /etc/group: name=rooter, GID=1001
+<86>Nov 11 13:52:00 groupadd[16974]: group added to /etc/gshadow: name=rooter
+<86>Nov 11 13:52:00 groupadd[16974]: new group: name=rooter, GID=1001
+<86>Nov 11 13:52:00 useradd[16980]: new user: name=rooter, UID=1001, GID=1001, home=/root, shell=/bin/bash, from=none
+<86>Nov 11 13:52:00 userdel[16990]: delete user 'builder'
+<86>Nov 11 13:52:00 userdel[16990]: removed group 'builder' owned by 'builder'
+<86>Nov 11 13:52:00 userdel[16990]: removed shadow group 'builder' owned by 'builder'
+<86>Nov 11 13:52:00 groupadd[16997]: group added to /etc/group: name=builder, GID=1002
+<86>Nov 11 13:52:00 groupadd[16997]: group added to /etc/gshadow: name=builder
+<86>Nov 11 13:52:00 groupadd[16997]: new group: name=builder, GID=1002
+<86>Nov 11 13:52:00 useradd[17003]: new user: name=builder, UID=1002, GID=1002, home=/usr/src, shell=/bin/bash, from=none
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /usr/src/in/nosrpm/streltsov-hello-1.0-alt1.nosrc.rpm (w1.gzdio)
+Installing streltsov-hello-1.0-alt1.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%install): /bin/sh -e /usr/src/tmp/rpmb-tmp.uonxzw
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ /bin/chmod -Rf u+rwX -- /usr/src/tmp/streltsov-hello-buildroot
++ :
++ /bin/rm -rf -- /usr/src/tmp/streltsov-hello-buildroot
++ PATH=/usr/libexec/rpm-build:/usr/src/bin:/usr/bin:/bin:/usr/local/bin:/usr/games
++ mkdir -p /usr/src/tmp/streltsov-hello-buildroot/usr/bin
++ install -p -m 755 /usr/src/RPM/SOURCES/streltsov-hello.sh /usr/src/tmp/streltsov-hello-buildroot/usr/bin/streltsov-hello
++ /usr/lib/rpm/brp-alt
+Cleaning files in /usr/src/tmp/streltsov-hello-buildroot (auto)
+Verifying and fixing files in /usr/src/tmp/streltsov-hello-buildroot (binconfig,pkgconfig,libtool,desktop,gnuconfig)
+Checking contents of files in /usr/src/tmp/streltsov-hello-buildroot/ (default)
+Compressing files in /usr/src/tmp/streltsov-hello-buildroot (auto)
+Verifying ELF objects in /usr/src/tmp/streltsov-hello-buildroot (arch=normal,fhs=normal,lfs=relaxed,lint=relaxed,rpath=normal,stack=normal,textrel=normal,unresolved=normal)
+Splitting links to aliased files under /{,s}bin in /usr/src/tmp/streltsov-hello-buildroot
+Processing files: streltsov-hello-1.0-alt1
+Finding Provides (using /usr/lib/rpm/find-provides)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.8cgPCK
+find-provides: running scripts (debuginfo,lib,pam,perl,pkgconfig,python,python3,shell,sysusers)
+Finding Requires (using /usr/lib/rpm/find-requires)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.9aK2gk
+find-requires: running scripts (cpp,debuginfo,files,lib,pam,perl,pkgconfig,pkgconfiglib,python,python3,rpmlib,shebang,shell,static,symlinks,systemd-services)
+Requires: /bin/sh
+Finding debuginfo files (using /usr/lib/rpm/find-debuginfo-files)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.WdgpFT
+Wrote: /usr/src/RPM/SRPMS/streltsov-hello-1.0-alt1.src.rpm (w2.lzdio)
+Wrote: /usr/src/RPM/RPMS/x86_64/streltsov-hello-1.0-alt1.x86_64.rpm (w2.lzdio)
+0.69user 1.37system 0:15.02elapsed 13%CPU (0avgtext+0avgdata 6108maxresident)k
+3208inputs+232outputs (1major+72526minor)pagefaults 0swaps

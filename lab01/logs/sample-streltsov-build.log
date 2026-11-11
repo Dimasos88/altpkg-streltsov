@@ -1,0 +1,6 @@
+rpmbuild -ba /usr/src/RPM/SPECS/sample-streltsov.spec
+[builder@localhost .in]$ <mbuild -ba /usr/src/RPM/SPECS/sample-streltsov.spec
+Processing files: sample-streltsov-1.0-alt1
+Wrote: /usr/src/RPM/SRPMS/sample-streltsov-1.0-alt1.src.rpm (w2.lzdio)
+Wrote: /usr/src/RPM/RPMS/x86_64/sample-streltsov-1.0-alt1.x86_64.rpm (w2.lzdio)
+[builder@localhost .in]$ logout

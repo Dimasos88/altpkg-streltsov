@@ -1,0 +1,32 @@
+rpmbuild -ba /usr/src/RPM/SPECS/streltsov-hello.spec
+[builder@localhost .in]$ rpmbuild -ba /usr/src/RPM/SPECS/streltsov-hello.spec
+Executing(%install): /bin/sh -e /usr/src/tmp/rpmb-tmp.dPs8la
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ /bin/chmod -Rf u+rwX -- /usr/src/tmp/streltsov-hello-buildroot
++ :
++ /bin/rm -rf -- /usr/src/tmp/streltsov-hello-buildroot
++ PATH=/usr/libexec/rpm-build:/usr/src/bin:/usr/bin:/bin:/usr/local/bin:/usr/games
++ mkdir -p /usr/src/tmp/streltsov-hello-buildroot/usr/bin
++ install -p -m 755 /usr/src/RPM/SOURCES/streltsov-hello.sh /usr/src/tmp/streltsov-hello-buildroot/usr/bin/streltsov-hello
++ /usr/lib/rpm/brp-alt
+Cleaning files in /usr/src/tmp/streltsov-hello-buildroot (auto)
+Verifying and fixing files in /usr/src/tmp/streltsov-hello-buildroot (binconfig,pkgconfig,libtool,desktop,gnuconfig)
+Checking contents of files in /usr/src/tmp/streltsov-hello-buildroot/ (default)
+Compressing files in /usr/src/tmp/streltsov-hello-buildroot (auto)
+Verifying ELF objects in /usr/src/tmp/streltsov-hello-buildroot (arch=normal,fhs=normal,lfs=relaxed,lint=relaxed,rpath=normal,stack=normal,textrel=normal,unresolved=normal)
+Splitting links to aliased files under /{,s}bin in /usr/src/tmp/streltsov-hello-buildroot
+Processing files: streltsov-hello-1.0-alt1
+Finding Provides (using /usr/lib/rpm/find-provides)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.Jt1SqB
+find-provides: running scripts (debuginfo,lib,pam,perl,pkgconfig,python,python3,shell,sysusers)
+Finding Requires (using /usr/lib/rpm/find-requires)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.Q7HznH
+find-requires: running scripts (cpp,debuginfo,files,lib,pam,perl,pkgconfig,pkgconfiglib,python,python3,rpmlib,shebang,shell,static,symlinks,systemd-services)
+Requires: /bin/sh
+Finding debuginfo files (using /usr/lib/rpm/find-debuginfo-files)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.I8OSdG
+Wrote: /usr/src/RPM/SRPMS/streltsov-hello-1.0-alt1.src.rpm (w2.lzdio)
+Wrote: /usr/src/RPM/RPMS/x86_64/streltsov-hello-1.0-alt1.x86_64.rpm (w2.lzdio)
+[builder@localhost .in]$ logout

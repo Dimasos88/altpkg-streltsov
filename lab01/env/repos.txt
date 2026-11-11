@@ -1,0 +1,2 @@
+rpm [p11] http://ftp.basealt.ru/pub/distributions/ALTLinux p11/branch/x86_64 classic
+rpm [p11] http://ftp.basealt.ru/pub/distributions/ALTLinux p11/branch/noarch classic
