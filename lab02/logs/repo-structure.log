@@ -1,0 +1,9 @@
+/home/user/hasher-rebuild/repo
+|-- SRPMS.hasher
+|   `-- Show-1.0-alt1.src.rpm
+`-- x86_64
+    `-- RPMS.hasher
+        |-- Show-1.0-alt1.x86_64.rpm
+        `-- Show-debuginfo-1.0-alt1.x86_64.rpm
+
+4 directories, 3 files

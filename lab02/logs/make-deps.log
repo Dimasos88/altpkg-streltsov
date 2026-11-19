@@ -1,0 +1,8 @@
+=== First build (clean) ===
+gcc -Wall -Wextra -O2 -c Show.c -o Show.o
+gcc -Wall -Wextra -O2 -o Show Show.o -lncurses
+=== Second build (no changes) ===
+make: Nothing to be done for 'all'.
+=== Third build (after touch Show.c) ===
+gcc -Wall -Wextra -O2 -c Show.c -o Show.o
+gcc -Wall -Wextra -O2 -o Show Show.o -lncurses

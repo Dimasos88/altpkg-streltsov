@@ -1,0 +1,9 @@
+rpm -ivh /usr/src/RPM/RPMS/x86_64/Show-1.0-alt1.x86_64.rpm
+]0;root@localhost: /.in[?2004h[root@localhost .in]# rpm -ivh /usr/src/RPM/RPMS/x86_64/Show-1.0-alt1.x86_64.rpm [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Km
+[?2004lPreparing...                            ################################# [100%]
+Updating / installing...
+1: Show-1.0-alt1                        ################################# [100%]
+<13>Nov 19 16:47:02 rpm: Show-1.0-alt1 1795106821 installed
+Running /usr/lib/rpm/posttrans-filetriggers
+]0;root@localhost: /.in[?2004h[root@localhost .in]# [?2004l
+logout

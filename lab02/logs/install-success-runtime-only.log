@@ -1,0 +1,15 @@
+
+rpm -q Show
+rpm -q libncurses6
+rpm -q libncurses-devel || echo "devel package is NOT installed: PASS"
+
+]0;root@localhost: /.in[?2004h[root@localhost .in]# 
+[?2004l]0;root@localhost: /.in[?2004h[root@localhost .in]# rpm -q Show
+[?2004lShow-1.0-alt1.x86_64
+]0;root@localhost: /.in[?2004h[root@localhost .in]# rpm -q libncurses6
+[?2004llibncurses6-6.5.20250705-alt1.x86_64
+]0;root@localhost: /.in[?2004h[root@localhost .in]# rpm -q libncurses-devel || echo "devel package is NOT installed: PASS"
+[?2004llibncurses-devel-6.5.20250705-alt1.x86_64
+]0;root@localhost: /.in[?2004h[root@localhost .in]# 
+[?2004l]0;root@localhost: /.in[?2004h[root@localhost .in]# [?2004l
+logout

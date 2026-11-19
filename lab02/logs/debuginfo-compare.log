@@ -1,0 +1,9 @@
+=== Show-1.0-alt1.x86_64.rpm files ===
+/usr/bin/Show
+=== Show-debuginfo-1.0-alt1.x86_64.rpm files ===
+/usr/lib/debug/.build-id/00
+/usr/lib/debug/.build-id/00/a5f8d251d769e39bd21e1b2e046aa6c1f35822
+/usr/lib/debug/.build-id/00/a5f8d251d769e39bd21e1b2e046aa6c1f35822.debug
+/usr/lib/debug/usr/bin/Show.debug
+=== Intersection check (comm -12) ===
+Files intersection count: 0

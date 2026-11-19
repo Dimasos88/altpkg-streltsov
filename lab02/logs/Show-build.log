@@ -1,0 +1,72 @@
+rpmbuild -ba /usr/src/RPM/SPECS/Show.spec
+]0;builder@localhost: /.in[?2004h[builder@localhost .in]$ rpmbuild -ba /usr/src/RPM/SPECS/Show.spec
+[?2004lExecuting(%prep): /bin/sh -e /usr/src/tmp/rpmb-tmp.UXVow3
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ rm -rf Show-1.0
++ echo 'Source #0 (Show-1.0.tar.gz):'
+Source #0 (Show-1.0.tar.gz):
++ /usr/bin/gzip -dc /usr/src/RPM/SOURCES/Show-1.0.tar.gz
++ /bin/tar -xf -
++ cd Show-1.0
++ /bin/chmod -c -Rf u+rwX,go-w .
++ exit 0
+Executing(%build): /bin/sh -e /usr/src/tmp/rpmb-tmp.ZGnkOi
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ cd Show-1.0
++ make -j4
+make: Entering directory '/usr/src/RPM/BUILD/Show-1.0'
+gcc -Wall -Wextra -O2 -c Show.c -o Show.o
+make: Leaving directory '/usr/src/RPM/BUILD/Show-1.0'
+make: Entering directory '/usr/src/RPM/BUILD/Show-1.0'
+gcc -Wall -Wextra -O2 -o Show Show.o -lncurses
+make: Leaving directory '/usr/src/RPM/BUILD/Show-1.0'
++ exit 0
+Executing(%install): /bin/sh -e /usr/src/tmp/rpmb-tmp.mSa6c0
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ /bin/chmod -Rf u+rwX -- /usr/src/tmp/Show-buildroot
++ :
++ /bin/rm -rf -- /usr/src/tmp/Show-buildroot
++ PATH=/usr/libexec/rpm-build:/usr/src/bin:/usr/bin:/bin:/usr/local/bin:/usr/games
++ cd Show-1.0
++ mkdir -p /usr/src/tmp/Show-buildroot/usr/bin
++ install -p -m 755 Show /usr/src/tmp/Show-buildroot/usr/bin/Show
++ /usr/lib/rpm/brp-alt
+Cleaning files in /usr/src/tmp/Show-buildroot (auto)
+Verifying and fixing files in /usr/src/tmp/Show-buildroot (binconfig,pkgconfig,libtool,desktop,gnuconfig)
+Checking contents of files in /usr/src/tmp/Show-buildroot/ (default)
+Compressing files in /usr/src/tmp/Show-buildroot (auto)
+056-debuginfo.brp: WARNING: debuginfo without debug sources.
+Verifying ELF objects in /usr/src/tmp/Show-buildroot (arch=normal,fhs=normal,lfs=relaxed,lint=relaxed,rpath=normal,stack=normal,textrel=normal,unresolved=normal)
+Splitting links to aliased files under /{,s}bin in /usr/src/tmp/Show-buildroot
+Processing files: Show-1.0-alt1
+Finding Provides (using /usr/lib/rpm/find-provides)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.MNnHvj
+find-provides: running scripts (debuginfo,lib,pam,perl,pkgconfig,python,python3,shell,sysusers)
+Finding Requires (using /usr/lib/rpm/find-requires)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.RhQP0p
+find-requires: running scripts (cpp,debuginfo,files,lib,pam,perl,pkgconfig,pkgconfiglib,python,python3,rpmlib,shebang,shell,static,symlinks,systemd-services)
+Requires: /lib64/ld-linux-x86-64.so.2, libc.so.6(GLIBC_2.2.5)(64bit), libc.so.6(GLIBC_2.3.4)(64bit), libc.so.6(GLIBC_2.34)(64bit), libc.so.6(GLIBC_2.4)(64bit), libncurses.so.6()(64bit) >= set:mhcyTG6w0U2gJSQkVssrPZeLghGHYRlOrxwTNHWZxquMAljJa, libtinfo.so.6()(64bit) >= set:mkZ5lbO2OTf9, rtld(GNU_HASH)
+Requires(rpmlib): rpmlib(SetVersions)
+Finding debuginfo files (using /usr/lib/rpm/find-debuginfo-files)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.LaQYR6
+Creating Show-debuginfo package
+Processing files: Show-debuginfo-1.0-alt1
+Finding Provides (using /usr/lib/rpm/find-provides)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.SLY0Gy
+find-provides: running scripts (debuginfo)
+Finding Requires (using /usr/lib/rpm/find-requires)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.fsk9Vp
+find-requires: running scripts (debuginfo)
+Requires: Show = 1.0-alt1, /usr/lib/debug/lib64/ld-linux-x86-64.so.2.debug, debug64(libc.so.6), debug64(libncurses.so.6), debug64(libtinfo.so.6)
+Wrote: /usr/src/RPM/SRPMS/Show-1.0-alt1.src.rpm (w2.lzdio)
+Wrote: /usr/src/RPM/RPMS/x86_64/Show-1.0-alt1.x86_64.rpm (w2.lzdio)
+Wrote: /usr/src/RPM/RPMS/x86_64/Show-debuginfo-1.0-alt1.x86_64.rpm (w2.lzdio)
+]0;builder@localhost: /.in[?2004h[builder@localhost .in]$ [?2004l
+logout
