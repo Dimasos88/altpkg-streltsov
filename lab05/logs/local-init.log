@@ -1,0 +1,12 @@
+warning: File "/tmp/.private/user/tmp.GYxg0rpZql/.gdbinit" auto-loading has been declined by your `auto-load safe-path' set to "/nonexistent".
+To enable execution of this file add
+	add-auto-load-safe-path /tmp/.private/user/tmp.GYxg0rpZql/.gdbinit
+line to your configuration file "/home/user/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/user/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+Undefined command: "lab05-marker".  Try "help".
+LAB05_LOCAL_INIT

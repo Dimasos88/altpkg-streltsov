@@ -1,0 +1,4 @@
+ptrace_scope=1
+ptrace: Operation not permitted.
+No threads.
+ptrace: Operation not permitted.

@@ -1,0 +1,4 @@
+CHECK conditional 2 4
+CHECK range 1 2
+CHECK range 2 4
+CHECK range 3 6

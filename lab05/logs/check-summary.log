@@ -1,0 +1,13 @@
+PASS build
+PASS elf-format
+PASS debug-builds
+PASS logic-error
+PASS separate-debug
+PASS batch-gdb
+PASS local-init
+PASS attach-observation
+PASS gdbserver-loopback
+SKIP hasher-gdb
+PASS distro-debug-server
+SKIP second-hasher-session
+PASS=10 FAIL=0 SKIP=2

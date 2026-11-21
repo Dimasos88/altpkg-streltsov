@@ -1,0 +1,31 @@
+progression 18888 bytes
+progression-debug 21800 bytes
+progression-opt 24104 bytes
+No line number information available for address 0x1326 <main>
+No line number information available for address 0x1326 <main>
+36	int main(int argc, char **argv)
+36	int main(int argc, char **argv)
+Breakpoint 1 at 0x1360: progression. (2 locations)
+Missing separate debuginfo for /lib64/ld-linux-x86-64.so.2.
+Try to install the hash file /usr/lib/debug/.build-id/62/429d699c6000d36d1a89b6a7def69e8ce8144a.debug
+Missing separate debuginfo for /lib64/libc.so.6.
+Try to install the hash file /usr/lib/debug/.build-id/16/9e9c77efa2e23950e429aa9b36a179832d8ae6.debug
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+Breakpoint 1.1, progression (start=0, end=4, step=2) at progression.c:23
+23	    if (!step || (start < end && step < 0) || (start > end && step > 0))
+start = 0
+end = 4
+step = 2
+index = <optimized out>
+value = <optimized out>
+21	int progression(long start, long end, long step)
+start = 0
+end = 4
+step = 2
+index = <optimized out>
+value = <optimized out>
+warning: 32	progression.c: No such file or directory
+warning: 32	progression.c: No such file or directory
+36	int main(int argc, char **argv)
