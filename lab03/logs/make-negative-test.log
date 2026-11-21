@@ -1,0 +1,12 @@
+cmp: EOF on 'test-output/lab03-static-0.stdout' which is empty
+make: *** [Makefile:54: test] Error 1
+cc  -O2 -g -Wall -Wextra -c main.c -o main.o
+cc  -O2 -g -Wall -Wextra -c output.c -o output.o
+cc  -O2 -g -Wall -Wextra -c counter.c -o counter.o
+cc  -o lab03-objects main.o output.o counter.o
+ar rvU static/liblab03.a output.o
+r - output.o
+ar rvU static/liblab03.a counter.o
+r - counter.o
+cc  -o lab03-static main.o -Lstatic -llab03
+cc  -o lab03-shared main.o -L. -l:liblab03.so.1

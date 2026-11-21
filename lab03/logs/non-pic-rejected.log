@@ -1,0 +1,4 @@
+ld: output.nonpic.o: relocation R_X86_64_32 against `.rodata' can not be used when making a shared object; recompile with -fPIC
+ld: failed to set dynamic section sizes: bad value
+collect2: error: ld returned 1 exit status
+ld: output.nonpic.o: relocation R_X86_64_32 against `.rodata' can not be used when making a shared object; recompile with -fPIC

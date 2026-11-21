@@ -1,0 +1,7 @@
+ld: /tmp/.private/user/ccPk67Nq.o: in function `duplicate_example':
+output.c:(.text+0x0): multiple definition of `duplicate_example'; /tmp/.private/user/ccnGDtLh.o:main.c:(.text+0x0): first defined here
+ld: /tmp/.private/user/ccdfLwqb.o: in function `duplicate_example':
+counter.c:(.text+0x0): multiple definition of `duplicate_example'; /tmp/.private/user/ccnGDtLh.o:main.c:(.text+0x0): first defined here
+collect2: error: ld returned 1 exit status
+output.c:(.text+0x0): multiple definition of `duplicate_example'; /tmp/.private/user/ccnGDtLh.o:main.c:(.text+0x0): first defined here
+counter.c:(.text+0x0): multiple definition of `duplicate_example'; /tmp/.private/user/ccnGDtLh.o:main.c:(.text+0x0): first defined here

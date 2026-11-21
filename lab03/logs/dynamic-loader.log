@@ -1,0 +1,24 @@
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+                 w __cxa_finalize@GLIBC_2.2.5
+                 U __fprintf_chk@GLIBC_2.3.4
+                 w __gmon_start__
+                 U __printf_chk@GLIBC_2.3.4
+0000000000004014 B line_number
+0000000000001120 T print_line
+0000000000001150 T print_usage
+                 U stderr@GLIBC_2.2.5
+0000000000001150 T print_usage
+0000000000001120 T print_line
+0000000000004014 B line_number
+./lab03-shared: error while loading shared libraries: liblab03.so.1: cannot open shared object file: No such file or directory
+./lab03-shared: error while loading shared libraries: liblab03.so.1: cannot open shared object file: No such file or directory
+	linux-vdso.so.1 (0x00007fab37fb9000)
+	liblab03.so.1 => not found
+	libc.so.6 => /lib64/libc.so.6 (0x00007fab37db1000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fab37fbb000)
+	liblab03.so.1 => not found
+	linux-vdso.so.1 (0x00007f0d30309000)
+	liblab03.so.1 => /tmp/.private/user/tmp.9dthbCtdqQ/liblab03.so.1 (0x00007f0d302f9000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f0d300fc000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f0d3030b000)

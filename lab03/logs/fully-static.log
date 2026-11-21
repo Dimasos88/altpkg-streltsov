@@ -1,0 +1,5 @@
+cc  -L/home/user/lab03-static-sysroot/usr/lib64 -static -o lab03-full-static main.o -Lstatic -llab03
+lab03-objects 22888 bytes
+lab03-full-static 3047640 bytes
+lab03-objects 36
+lab03-full-static 1930

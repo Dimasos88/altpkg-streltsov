@@ -1,0 +1,16 @@
+PASS shell-syntax
+PASS compile-stages
+PASS compiler-trace
+PASS duplicate-definition
+PASS symbol-table
+PASS incremental-build
+PASS make-rule-variants
+PASS static-library
+PASS fully-static
+PASS non-pic-rejected
+PASS dynamic-loader
+PASS make-test
+PASS make-negative-test
+PASS cleanup-targets
+PASS rpm-package
+PASS=15 FAIL=0 SKIP=0

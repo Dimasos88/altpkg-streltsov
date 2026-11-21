@@ -1,0 +1,15 @@
+cc  -Wall -c main.c -o main.o
+cc  -Wall -c output.c -o output.o
+cc  -Wall -c counter.c -o counter.o
+cc -o app main.o output.o counter.o
+cc -Wall   -c -o main.o main.c
+cc -Wall   -c -o output.o output.c
+cc -Wall   -c -o counter.o counter.c
+cc -o app main.o output.o counter.o
+make: Nothing to be done for 'all'.
+cc -O0   -c -o main.o main.c
+cc -O0   -c -o output.o output.c
+cc -O0   -c -o counter.o counter.c
+cc -o app main.o output.o counter.o
+make: 'clean' is up to date.
+rm -f main.o
