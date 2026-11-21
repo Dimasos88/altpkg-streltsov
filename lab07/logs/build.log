@@ -1,0 +1,6 @@
+make: Entering directory '/home/user/altpkg-lab07/lab07/sources'
+make: Nothing to be done for 'all'.
+make: 'lab07-demo' is up to date.
+make: 'libconstant.so' is up to date.
+make: 'libguard.so' is up to date.
+make: Leaving directory '/home/user/altpkg-lab07/lab07/sources'

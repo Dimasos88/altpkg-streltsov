@@ -1,0 +1,6 @@
+exit=2: Usage: /home/user/altpkg-lab07/lab07/sources/lab07-move SOURCE TARGET
+exit=3: open source: No such file or directory
+exit=4: open source: Permission denied
+exit=5: same file: Invalid argument
+exit=6: create target: Permission denied
+exit=0: overwrite: content verified, source removed

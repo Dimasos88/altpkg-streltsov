@@ -1,0 +1,367 @@
+49153 execve("/bin/sh", ["/bin/sh", "-c", "/bin/true & /bin/true & /bin/tru"...], 0x7ffd6e99f230 /* 24 vars */) = 0
+49153 brk(NULL)                         = 0x565253b90000
+49153 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7712af4000
+49153 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+49153 openat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+49153 newfstatat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/glibc-hwcaps/x86-64-v2/", 0x7ffde8ba5be0, 0) = -1 ENOENT (No such file or directory)
+49153 openat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+49153 newfstatat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+49153 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+49153 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=83979, ...}, AT_EMPTY_PATH) = 0
+49153 mmap(NULL, 83979, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7712adf000
+49153 close(3)                          = 0
+49153 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+49153 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P~\2\0\0\0\0\0"..., 832) = 832
+49153 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+49153 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1946536, ...}, AT_EMPTY_PATH) = 0
+49153 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+49153 mmap(NULL, 1998288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f77128f7000
+49153 mmap(0x7f771291d000, 1417216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f771291d000
+49153 mmap(0x7f7712a77000, 348160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x180000) = 0x7f7712a77000
+49153 mmap(0x7f7712acc000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d4000) = 0x7f7712acc000
+49153 mmap(0x7f7712ad2000, 52688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7712ad2000
+49153 close(3)                          = 0
+49153 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f77128f4000
+49153 arch_prctl(ARCH_SET_FS, 0x7f77128f4740) = 0
+49153 set_tid_address(0x7f77128f4a10)   = 49153
+49153 set_robust_list(0x7f77128f4a20, 24) = 0
+49153 rseq(0x7f77128f5060, 0x20, 0, 0x53053053) = 0
+49153 mprotect(0x7f7712acc000, 16384, PROT_READ) = 0
+49153 mprotect(0x56521697b000, 8192, PROT_READ) = 0
+49153 mprotect(0x7f7712b2e000, 8192, PROT_READ) = 0
+49153 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+49153 munmap(0x7f7712adf000, 83979)     = 0
+49153 openat(AT_FDCWD, "/dev/tty", O_RDWR|O_NONBLOCK) = -1 ENXIO (No such device or address)
+49153 ioctl(0, TCGETS, 0x7ffde8ba67b0)  = -1 ENOTTY (Inappropriate ioctl for device)
+49153 getrandom("\x9d\x4c\xd0\x70\xc2\x29\x04\xab", 8, GRND_NONBLOCK) = 8
+49153 brk(NULL)                         = 0x565253b90000
+49153 brk(0x565253bb1000)               = 0x565253bb1000
+49153 getuid()                          = 1000
+49153 getgid()                          = 1000
+49153 geteuid()                         = 1000
+49153 getegid()                         = 1000
+49153 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+49153 sysinfo({uptime=4283, loads=[59872, 39840, 23296], totalram=2066522112, freeram=224997376, sharedram=2187264, bufferram=47714304, totalswap=4131385344, freeswap=3664691200, procs=627, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+49153 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+49153 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+49153 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+49153 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+49153 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+49153 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+49153 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+49153 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 uname({sysname="Linux", nodename="host-15", ...}) = 0
+49153 newfstatat(AT_FDCWD, "/home/user/altpkg-lab07/lab07", {st_mode=S_IFDIR|0707, st_size=4096, ...}, 0) = 0
+49153 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0707, st_size=4096, ...}, 0) = 0
+49153 newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+49153 newfstatat(AT_FDCWD, "/home/user", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
+49153 newfstatat(AT_FDCWD, "/home/user/altpkg-lab07", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+49153 newfstatat(AT_FDCWD, "/home/user/altpkg-lab07/lab07", {st_mode=S_IFDIR|0707, st_size=4096, ...}, 0) = 0
+49153 newfstatat(AT_FDCWD, "/home/user", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
+49153 getpid()                          = 49153
+49153 getppid()                         = 49151
+49153 getpid()                          = 49153
+49153 getppid()                         = 49151
+49153 getpid()                          = 49153
+49153 getppid()                         = 49151
+49153 getpgrp()                         = 49074
+49153 ioctl(2, TIOCGPGRP, 0x7ffde8ba66c4) = -1 ENOTTY (Inappropriate ioctl for device)
+49153 rt_sigaction(SIGCHLD, {sa_handler=0x5652168f5650, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 ioctl(2, TIOCGPGRP, 0x7ffde8ba6694) = -1 ENOTTY (Inappropriate ioctl for device)
+49153 prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=4*1024, rlim_max=5*1024}) = 0
+49153 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+49153 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f77128f4a10) = 49154
+49154 set_robust_list(0x7f77128f4a20, 24 <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49154 <... set_robust_list resumed>)    = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49154 getpid( <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49154 <... getpid resumed>)             = 49154
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+49154 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49154 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49154 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49154 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49154 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49154 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49154 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, NULL <unfinished ...>
+49154 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD] <unfinished ...>
+49154 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49154 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+49154 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... clone resumed>, child_tidptr=0x7f77128f4a10) = 49155
+49154 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49155 set_robust_list(0x7f77128f4a20, 24 <unfinished ...>
+49154 <... rt_sigaction resumed>, {sa_handler=0x5652168f5650, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49155 <... set_robust_list resumed>)    = 0
+49154 openat(AT_FDCWD, "/dev/null", O_RDONLY <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49155 getpid( <unfinished ...>
+49154 <... openat resumed>)             = 3
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49155 <... getpid resumed>)             = 49155
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49155 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+49155 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49154 dup2(3, 0 <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49155 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49154 <... dup2 resumed>)               = 0
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49155 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49154 close(3 <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49155 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49154 <... close resumed>)              = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49155 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49154 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49155 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49154 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49155 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+49155 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49155 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49154 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49155 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49154 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, NULL <unfinished ...>
+49155 <... rt_sigaction resumed>, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49154 execve("/bin/true", ["/bin/true"], 0x565253b9e010 /* 24 vars */ <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD] <unfinished ...>
+49155 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49155 <... rt_sigaction resumed>, {sa_handler=0x5652168f5650, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+49155 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49154 <... execve resumed>)             = 0
+49155 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... clone resumed>, child_tidptr=0x7f77128f4a10) = 49156
+49156 set_robust_list(0x7f77128f4a20, 24 <unfinished ...>
+49154 exit_group(0 <unfinished ...>
+49155 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49156 <... set_robust_list resumed>)    = 0
+49155 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49154 <... exit_group resumed>)         = ?
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49156 getpid( <unfinished ...>
+49155 execve("/bin/true", ["/bin/true"], 0x565253b9e010 /* 24 vars */ <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49156 <... getpid resumed>)             = 49156
+49154 +++ exited with 0 +++
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49156 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49156 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49156 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49155 <... execve resumed>)             = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49156 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+49156 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49155 exit_group(0 <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49156 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49155 <... exit_group resumed>)         = ?
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49156 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49155 +++ exited with 0 +++
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49156 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49156 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49156 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=49154, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+49156 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 wait4(-1 <unfinished ...>
+49156 <... rt_sigaction resumed>, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 49154
+49156 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 wait4(-1 <unfinished ...>
+49156 <... rt_sigaction resumed>, {sa_handler=0x5652168f5650, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 49155
+49156 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 wait4(-1, 0x7ffde8ba5910, WNOHANG, NULL) = 0
+49153 rt_sigreturn({mask=[]} <unfinished ...>
+49156 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigreturn resumed>)       = 0
+49156 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, NULL <unfinished ...>
+49156 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD] <unfinished ...>
+49156 execve("/bin/true", ["/bin/true"], 0x565253b9e010 /* 24 vars */ <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49153 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f77128f4a10) = 49157
+49156 <... execve resumed>)             = 0
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49157 set_robust_list(0x7f77128f4a20, 24 <unfinished ...>
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49156 exit_group(0 <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49157 <... set_robust_list resumed>)    = 0
+49156 <... exit_group resumed>)         = ?
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49157 getpid( <unfinished ...>
+49156 +++ exited with 0 +++
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+49157 <... getpid resumed>)             = 49157
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+49157 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+49157 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49157 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49157 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+49157 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49157 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=49156, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+49153 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 49156
+49157 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 wait4(-1, 0x7ffde8ba5a10, WNOHANG, NULL) = 0
+49157 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigreturn({mask=[]} <unfinished ...>
+49157 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigreturn resumed>)       = 0
+49157 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, NULL <unfinished ...>
+49157 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49157 <... rt_sigaction resumed>, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD] <unfinished ...>
+49157 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49153 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+49157 <... rt_sigaction resumed>, {sa_handler=0x5652168f5650, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, 8) = 0
+49157 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... clone resumed>, child_tidptr=0x7f77128f4a10) = 49158
+49158 set_robust_list(0x7f77128f4a20, 24 <unfinished ...>
+49157 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49158 <... set_robust_list resumed>)    = 0
+49157 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49158 getpid( <unfinished ...>
+49157 execve("/bin/true", ["/bin/true"], 0x565253b9e010 /* 24 vars */ <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49158 <... getpid resumed>)             = 49158
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49158 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49158 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49157 <... execve resumed>)             = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49158 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49157 exit_group(0 <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49158 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49157 <... exit_group resumed>)         = ?
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49158 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49157 +++ exited with 0 +++
+49158 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49158 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [CHLD], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [CHLD] <unfinished ...>
+49158 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49158 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49158 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=49157, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+49158 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 49157
+49158 <... rt_sigaction resumed>, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 wait4(-1, 0x7ffde8ba5b10, WNOHANG, NULL) = 0
+49158 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 rt_sigreturn({mask=[]} <unfinished ...>
+49158 <... rt_sigaction resumed>, {sa_handler=0x5652168f5650, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigreturn resumed>)       = 0
+49153 rt_sigprocmask(SIG_BLOCK, NULL <unfinished ...>
+49158 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+49158 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 <... rt_sigprocmask resumed>, NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+49158 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20} <unfinished ...>
+49153 <... rt_sigprocmask resumed>, [], 8) = 0
+49158 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49158 execve("/bin/true", ["/bin/true"], 0x565253b9e010 /* 24 vars */ <unfinished ...>
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigaction(SIGINT, {sa_handler=0x5652168f7fd0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 wait4(-1 <unfinished ...>
+49158 <... execve resumed>)             = 0
+49158 exit_group(0)                     = ?
+49158 +++ exited with 0 +++
+49153 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 49158
+49153 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, {sa_handler=0x5652168f7fd0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f7712934a20}, 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49153 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=49158, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+49153 wait4(-1, 0x7ffde8ba54d0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+49153 rt_sigreturn({mask=[]})           = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49153 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+49153 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+49153 exit_group(0)                     = ?
+49153 +++ exited with 0 +++

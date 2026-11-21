@@ -1,0 +1,4 @@
+read(3</usr/lib64/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P~\2\0\0\0\0\0"..., 832) = 832
+read(3</tmp/.private/user/tmp.MuGYoNGXbx/injected-source>, "ALT\n", 16384) = 4
+read(3</tmp/.private/user/tmp.MuGYoNGXbx/injected-source>, "", 16384) = 0
++++ exited with 0 +++

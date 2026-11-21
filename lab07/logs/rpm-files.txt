@@ -1,0 +1,2 @@
+/usr/bin/lab07-move
+/usr/bin/lab07-signals

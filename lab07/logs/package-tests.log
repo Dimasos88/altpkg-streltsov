@@ -1,0 +1,10 @@
+make: Entering directory '/home/user/altpkg-lab07/lab07/sources'
+bash tests/check-package.sh
+PASS normal
+First application read: 2; loader reads: 1
+read: Input/output error
+PASS read-error
+PASS return-value-and-repeated-signal
+tests/check-package.sh: line 25: 49328 User defined signal 1   strace --inject=rt_sigaction:error=EINVAL:when=1 --inject="read:signal=SIGUSR1:when=$first" -o "$work/unhandled.trace" ./lab07-signals "$data" > "$work/unhandled" 2> "$work/unhandled.err"
+PASS missing-handler
+make: Leaving directory '/home/user/altpkg-lab07/lab07/sources'

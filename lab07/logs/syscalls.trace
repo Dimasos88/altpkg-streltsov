@@ -1,0 +1,44 @@
+execve("/home/user/altpkg-lab07/lab07/sources/lab07-demo", ["/home/user/altpkg-lab07/lab07/so"..., "alpha"], 0x7fffaf0582c8 /* 25 vars */) = 0
+brk(NULL)                               = 0x55e2135a4000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9210d4b000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/glibc-hwcaps/x86-64-v2/", 0x7ffc678a2a30, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/user/lab05-tools/root/usr/lib64/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=83979, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 83979, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9210d36000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P~\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1946536, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 1998288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9210b4e000
+mmap(0x7f9210b74000, 1417216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f9210b74000
+mmap(0x7f9210cce000, 348160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x180000) = 0x7f9210cce000
+mmap(0x7f9210d23000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d4000) = 0x7f9210d23000
+mmap(0x7f9210d29000, 52688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9210d29000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9210b4b000
+arch_prctl(ARCH_SET_FS, 0x7f9210b4b740) = 0
+set_tid_address(0x7f9210b4ba10)         = 49189
+set_robust_list(0x7f9210b4ba20, 24)     = 0
+rseq(0x7f9210b4c060, 0x20, 0, 0x53053053) = 0
+mprotect(0x7f9210d23000, 16384, PROT_READ) = 0
+mprotect(0x55e2046cc000, 4096, PROT_READ) = 0
+mprotect(0x7f9210d85000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f9210d36000, 83979)           = 0
+openat(AT_FDCWD, "/tmp/.private/user/tmp.MuGYoNGXbx/levels-input", O_RDONLY) = 3
+read(3, "A", 1)                         = 1
+close(3)                                = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
+ioctl(1, TCGETS, 0x7ffc678a33e0)        = -1 ENOTTY (Inappropriate ioctl for device)
+getrandom("\xaa\x9b\xf8\x04\x0c\xc5\x98\x05", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x55e2135a4000
+brk(0x55e2135c5000)                     = 0x55e2135c5000
+write(1, "alpha 506162056\nalpha 1189116822"..., 49) = 49
+exit_group(0)                           = ?
++++ exited with 0 +++

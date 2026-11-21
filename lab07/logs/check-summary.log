@@ -1,0 +1,12 @@
+PASS build
+PASS trace-filters
+PASS descendant-tracing
+PASS tracing-levels
+PASS ptrace-restriction
+SKIP kernel-tracers
+PASS preload
+PASS move-files
+PASS failure-injection
+PASS package-tests
+PASS rpm-build
+PASS=10 FAIL=0 SKIP=1

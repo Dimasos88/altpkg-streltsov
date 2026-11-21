@@ -1,0 +1,6 @@
+parent=158 followed=367
+49153 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=49154, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+49153 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=49156, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+ > /home/user/altpkg-lab07/lab07/sources/lab07-demo(main+0xa9) [0x1199]
+ > /tmp/.private/user/tmp.MuGYoNGXbx/demo-stripped() [0x1199]
+ > /tmp/.private/user/tmp.MuGYoNGXbx/demo-stripped() [0x1230]

@@ -1,0 +1,9 @@
+application read=2 loader read=1
+read: Input/output error
+injection read:error=EIO:when=2: code=7, source retained
+write: No space left on device
+injection write:error=ENOSPC:when=1: code=8, source retained
+rename target: Permission denied
+injection rename:error=EACCES:when=1: code=10, source retained
+unlink source: Operation not permitted
+protected source preserved; ordinary source removed

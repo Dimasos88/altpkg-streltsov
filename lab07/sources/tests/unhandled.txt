@@ -1,0 +1,2 @@
+SIGUSR1 handler unavailable
+killed by SIGUSR1

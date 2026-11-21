@@ -1,0 +1,6 @@
+ptrace_scope=1
+strace: attach: ptrace(PTRACE_SEIZE, 49205): Operation not permitted
+strace: attach: ptrace(PTRACE_SEIZE, 49205): Operation not permitted
+ptrace: Operation not permitted.
+No threads.
+ptrace: Operation not permitted.

@@ -1,0 +1,19 @@
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P~\2\0\0\0\0\0"..., 832) = 832
+ > /usr/lib64/ld-linux-x86-64.so.2(__read_nocancel+0x4) [0x21244]
+ > /usr/lib64/ld-linux-x86-64.so.2(open_verify.constprop.0+0x77) [0x5527]
+ > /usr/lib64/ld-linux-x86-64.so.2(_dl_map_object+0x48c) [0x8b4c]
+ > /usr/lib64/ld-linux-x86-64.so.2(openaux+0x30) [0x2760]
+ > /usr/lib64/ld-linux-x86-64.so.2(_dl_catch_exception+0x78) [0x1488]
+ > /usr/lib64/ld-linux-x86-64.so.2(_dl_map_object_deps+0x447) [0x2bb7]
+ > /usr/lib64/ld-linux-x86-64.so.2(dl_main+0x1b10) [0x1e0f0]
+ > /usr/lib64/ld-linux-x86-64.so.2(_dl_sysdep_start+0x7e) [0x1ab6e]
+ > /usr/lib64/ld-linux-x86-64.so.2(_dl_start+0x54b) [0x1c2db]
+ > /usr/lib64/ld-linux-x86-64.so.2(_start+0x7) [0x1b147]
+ > No DWARF information found
+read(3, "A", 1)                         = 1
+ > /usr/lib64/libc.so.6(read+0xd) [0xff98d]
+ > /tmp/.private/user/tmp.MuGYoNGXbx/demo-stripped() [0x1199]
+ > /usr/lib64/libc.so.6() [0x27c8b]
+ > /usr/lib64/libc.so.6(__libc_start_main+0x84) [0x27d44]
+ > /tmp/.private/user/tmp.MuGYoNGXbx/demo-stripped() [0x1230]
++++ exited with 0 +++

@@ -1,0 +1,15 @@
+strlen('a')                                      = 5
+strcmp('a', 'a')                                 = 0
+time(nil)                                        = 1795290947
+srand(1795290947)                                = <void>
+getenv('L')                                      = '/'
+open('/', 0)                                     = 3
+read(3, 0x7ffde475e34f, 1)                       = 1
+close(3)                                         = 0
+rand()                                           = 506162056
+__printf_chk(2, <void>)                          = 16
+rand()                                           = 1189116822
+__printf_chk(2, <void>)                          = 17
+rand()                                           = 374827230
+__printf_chk(2, <void>)                          = 16
++++ exited (status 0) +++

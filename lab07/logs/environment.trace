@@ -1,0 +1,2 @@
+execve("/bin/true", ["/bin/true"], ["LAB07_TRACE=example", "PATH=/bin:/usr/bin"]) = 0
++++ exited with 0 +++
