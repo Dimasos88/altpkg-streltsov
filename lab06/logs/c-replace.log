@@ -1,0 +1,15 @@
+cat cat => dog cat
+cat => [cat]
+x12 => 12-x
+abc => a-abc
+alpha => >alpha
+alpha => alpha<
+none => none
+a123b => aNb
+b => <>
+a => \
+No group 2
+Invalid regular expression
+ 5c 5c
+ 5c
+ 5c 5c 5c 5c

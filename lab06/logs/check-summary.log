@@ -1,0 +1,9 @@
+PASS build
+PASS shell-globs
+PASS regex-counts
+PASS dialects-locales
+PASS backreferences
+PASS c-match
+PASS c-replace
+PASS rpm-install
+PASS=8 FAIL=0 SKIP=0

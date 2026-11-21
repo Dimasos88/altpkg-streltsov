@@ -1,0 +1,6 @@
+alpha9
+1 [0,5) alpha
+2 [5,6) 9
+Usage: /home/user/altpkg-lab56/lab06/sources/lab06-match [--groups] PATTERN
+Invalid regular expression
+RSS normal=1716 KiB; without release=62156 KiB

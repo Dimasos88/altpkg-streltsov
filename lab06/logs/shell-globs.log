@@ -1,0 +1,4 @@
+case: match
+no*.dat
+Expanded: a1.txt
+Quoted and noglob: 2 matches
