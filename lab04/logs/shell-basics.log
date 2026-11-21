@@ -1,0 +1,31 @@
+cd is a shell builtin
+printf is a shell builtin
+printf is /usr/bin/printf
+printf is /bin/printf
+sort is /usr/bin/sort
+sort is /bin/sort
+rpm is /usr/bin/rpm
+rpm is /bin/rpm
+lab04ls is aliased to `ls --color=auto'
+coreutils-9.4.0.75.7f2c97-alt1.x86_64
+coreutils-9.4.0.75.7f2c97-alt1.x86_64
+rpm-4.13.0.1-alt45.x86_64
+rpm-4.13.0.1-alt45.x86_64
+Before export: <>
+After export: <parent>
+Parent: parent
+#  two:three
+## three
+%  one:two
+%% one
+stderr
+stderr
+stdout
+stderr
+stdout
+--- /tmp/.private/user/tmp.PLerKOuam4/stdout	2026-11-21 21:55:49.279377439 +0300
++++ /tmp/.private/user/tmp.PLerKOuam4/combined	2026-11-21 21:55:49.279377439 +0300
+@@ -1 +1,2 @@
+ stdout
++stderr
+pipeline: coreutils, exit 0

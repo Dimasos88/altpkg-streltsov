@@ -1,0 +1,93 @@
+#!/bin/bash
+set -euo pipefail
+umask 077
+directory=${XDG_CONFIG_HOME:-$HOME/.config}/lab04-todo
+data=$directory/tasks.tsv
+temporary=
+selection=
+cleanup() {
+    if [[ -n $temporary ]]; then rm -f -- "$temporary"; fi
+    if [[ -n $selection ]]; then rm -f -- "$selection"; fi
+}
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+mkdir -p -- "$directory"
+touch -- "$data"
+exec 9>"$directory/.lock"
+
+list() {
+    local state label
+    for state in open done; do
+        if [[ $state == open ]]; then label=Open; else label=Done; fi
+        printf '%s:\n' "$label"
+        awk -F '\t' -v state="$state" '$2 == state {print $1 ": " $3}' "$data"
+    done
+}
+
+add() {
+    local id
+    [[ -n $1 && $1 != *$'\t'* && $1 != *$'\n'* && $1 != *$'\r'* ]] || return 2
+    id=$(awk -F '\t' 'END {print NR ? $1 + 1 : 1}' "$data")
+    printf '%s\topen\t%s\n' "$id" "$1" >> "$data"
+    printf '%s\n' "$id"
+}
+
+complete() {
+    [[ $1 =~ ^[1-9][0-9]*$ ]] || return 2
+    temporary=$(mktemp "$directory/.tasks.XXXXXX")
+    if awk -F '\t' -v OFS='\t' -v id="$1" '$1 == id {$2="done"; found=1} {print} END {exit !found}' "$data" > "$temporary"; then
+        mv -f -- "$temporary" "$data"
+        temporary=
+    else
+        rm -f -- "$temporary"
+        temporary=
+        return 1
+    fi
+}
+
+menu() {
+    local choice value
+    local -a options
+    local id state title
+    selection=$(mktemp)
+    while dialog --title 'Lab04 Todo' --menu 'Choose an operation' 14 60 4 \
+        add 'Add a task' list 'Show tasks' done 'Mark as done' quit 'Exit' 2>"$selection"; do
+        choice=$(<"$selection")
+        case $choice in
+            add)
+                if dialog --inputbox 'Task text' 9 60 2>"$selection"; then
+                    value=$(<"$selection")
+                    flock -x 9; add "$value" >/dev/null || true; flock -u 9
+                fi
+                ;;
+            list)
+                flock -s 9; value=$(list); flock -u 9
+                dialog --msgbox "$value" 18 65 || true
+                ;;
+            done)
+                options=()
+                flock -s 9
+                while IFS=$'\t' read -r id state title; do
+                    if [[ $state == open ]]; then options+=("$id" "$title"); fi
+                done < "$data"
+                flock -u 9
+                if (("${#options[@]}" == 0)); then
+                    dialog --msgbox 'No open tasks' 8 40 || true
+                elif dialog --menu 'Select a task' 16 65 8 "${options[@]}" 2>"$selection"; then
+                    value=$(<"$selection")
+                    flock -x 9; complete "$value" || true; flock -u 9
+                fi
+                ;;
+            quit) return 0 ;;
+        esac
+    done
+}
+
+case "${1:-}" in
+    '') menu ;;
+    list) [[ $# == 1 ]]; flock -s 9; list ;;
+    add) [[ $# == 2 ]]; flock -x 9; add "$2" ;;
+    done) [[ $# == 2 ]]; flock -x 9; complete "$2" ;;
+    *) printf 'Usage: %s [list | add TEXT | done ID]\n' "${0##*/}" >&2; exit 2 ;;
+esac

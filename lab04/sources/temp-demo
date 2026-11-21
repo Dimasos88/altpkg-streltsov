@@ -1,0 +1,14 @@
+#!/bin/bash
+set -eu
+file=$(mktemp "${TMPDIR:-/tmp}/lab04.XXXXXX")
+trap 'rm -f -- "$file"' EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+printf 'sample\n' > "$file"
+printf '%s\n' "$file"
+case "${1:-ok}" in
+    ok) ;;
+    error) exit 1 ;;
+    wait) while :; do read -r -t 1 unused || :; done ;;
+    *) exit 2 ;;
+esac

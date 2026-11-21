@@ -1,0 +1,6 @@
+/bin/bash
+coreutils
+dialog
+gawk
+util-linux
+/usr/bin/lab04-todo

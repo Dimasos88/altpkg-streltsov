@@ -1,0 +1,12 @@
+PASS bash-syntax
+PASS shell-basics
+PASS temporary-cleanup
+PASS text-processing
+PASS moreutils
+PASS todo-cli
+PASS todo-dialog
+PASS rpm-package
+PASS gear-import
+PASS gear-version
+PASS gear-remote-tags
+PASS=11 FAIL=0 SKIP=0
