@@ -1,0 +1,14 @@
+  --disable-keypad        read raw terminal escape sequences
+  --with-margin=N         window margin, 0 through 9
+#undef USE_KEYPAD
+#undef WINDOW_MARGIN
+#define WINDOW_MARGIN 2
+#define USE_KEYPAD 1
+lab08-autotools 1.0
+Bugs: https://github.com/Dimasos88/lab08-autotools/issues
+Key 265: KEY_F(1)
+#define WINDOW_MARGIN 4
+/* #undef USE_KEYPAD */
+lab08-autotools 1.0
+Bugs: https://github.com/Dimasos88/lab08-autotools/issues
+Exit: Escape

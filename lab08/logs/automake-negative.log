@@ -1,0 +1,23 @@
+make  check-TESTS
+make[1]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+make[2]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+FAIL: tests/notty.sh
+============================================================================
+Testsuite summary for lab08-autotools 1.0
+============================================================================
+# TOTAL: 1
+# PASS:  0
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  1
+# XPASS: 0
+# ERROR: 0
+============================================================================
+See ./test-suite.log
+Please report to https://github.com/Dimasos88/lab08-autotools/issues
+============================================================================
+make[2]: *** [Makefile:684: test-suite.log] Error 1
+make[2]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+make[1]: *** [Makefile:792: check-TESTS] Error 2
+make[1]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+make: *** [Makefile:996: check-am] Error 2

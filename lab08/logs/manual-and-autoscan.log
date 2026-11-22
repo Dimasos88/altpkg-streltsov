@@ -1,0 +1,6 @@
+Key 265: KEY_F(1)
+Exit: Escape
+stdin is not a terminal
+AC_PROG_CC
+AC_CHECK_HEADERS([unistd.h])
+configure.ac=19 configure=5896

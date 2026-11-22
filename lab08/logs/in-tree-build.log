@@ -1,0 +1,6 @@
+make  all-am
+make[1]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/tree-src'
+gcc -DHAVE_CONFIG_H -I.   -I/home/user/lab08-dev/root/usr/include/ncursesw -I/home/user/lab08-dev/root/usr/include -Wall -Wextra -g -O2 -MT keys.o -MD -MP -MF .deps/keys.Tpo -c -o keys.o keys.c
+mv -f .deps/keys.Tpo .deps/keys.Po
+gcc -Wall -Wextra -g -O2  -L/home/user/lab08-dev/root/usr/lib64 -o lab08-keys keys.o -lncursesw 
+make[1]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/tree-src'

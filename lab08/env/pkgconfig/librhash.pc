@@ -1,0 +1,9 @@
+prefix=/usr
+libdir=${prefix}/lib64
+includedir=${prefix}/include
+
+Name: librhash
+Description: Local pkg-config metadata for ALT librhash-devel
+Version: 1.3.5
+Libs: -L${libdir} -lrhash
+Cflags: -I${includedir}

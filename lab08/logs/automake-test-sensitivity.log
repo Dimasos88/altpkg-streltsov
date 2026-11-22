@@ -1,0 +1,43 @@
+configure.ac:6: installing './compile'
+configure.ac:5: installing './install-sh'
+configure.ac:5: installing './missing'
+Makefile.am: installing './depcomp'
+make  check-TESTS
+make[1]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+make[2]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+PASS: tests/notty.sh
+============================================================================
+Testsuite summary for lab08-autotools 1.0
+============================================================================
+# TOTAL: 1
+# PASS:  1
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[2]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+make[1]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+# TOTAL: 1
+# PASS:  1
+# FAIL:  0
+FAIL: tests/notty.sh
+make  check-TESTS
+make[1]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+make[2]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+PASS: tests/notty.sh
+============================================================================
+Testsuite summary for lab08-autotools 1.0
+============================================================================
+# TOTAL: 1
+# PASS:  1
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[2]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+make[1]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/key/present'
+# FAIL:  0

@@ -1,0 +1,17 @@
+autoreconf-default: export WARNINGS=
+autoreconf-default: Entering directory '.'
+autoreconf-default: configure.ac: not using Gettext
+autoreconf-default: running: aclocal --force 
+autoreconf-default: configure.ac: tracing
+autoreconf-default: configure.ac: not using Libtool
+autoreconf-default: configure.ac: not using Intltool
+autoreconf-default: configure.ac: not using Gtkdoc
+autoreconf-default: running: /usr/bin/autoconf-2.71 --force
+autoreconf-default: running: /usr/bin/autoheader-2.71 --force
+autoreconf-default: running: automake --add-missing --force-missing
+configure.ac:6: installing './compile'
+configure.ac:5: installing './install-sh'
+configure.ac:5: installing './missing'
+Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+autoreconf-default: Leaving directory '.'

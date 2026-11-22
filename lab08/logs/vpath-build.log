@@ -1,0 +1,23 @@
+make  all-am
+make[1]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/out'
+gcc -DHAVE_CONFIG_H -I. -I/tmp/.private/user/tmp.QfipuNXqi4/tree-src   -I/home/user/lab08-dev/root/usr/include/ncursesw -I/home/user/lab08-dev/root/usr/include -Wall -Wextra -g -O2 -MT keys.o -MD -MP -MF .deps/keys.Tpo -c -o keys.o /tmp/.private/user/tmp.QfipuNXqi4/tree-src/keys.c
+mv -f .deps/keys.Tpo .deps/keys.Po
+gcc -Wall -Wextra -g -O2  -L/home/user/lab08-dev/root/usr/lib64 -o lab08-keys keys.o -lncursesw 
+make[1]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/out'
+make  check-TESTS
+make[1]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/out'
+make[2]: Entering directory '/tmp/.private/user/tmp.QfipuNXqi4/out'
+PASS: tests/notty.sh
+============================================================================
+Testsuite summary for lab08-autotools 1.0
+============================================================================
+# TOTAL: 1
+# PASS:  1
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[2]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/out'
+make[1]: Leaving directory '/tmp/.private/user/tmp.QfipuNXqi4/out'

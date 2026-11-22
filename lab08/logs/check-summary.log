@@ -1,0 +1,8 @@
+PASS manual-and-autoscan
+PASS mandatory-and-optional
+PASS config-header
+PASS automake-test-sensitivity
+PASS separate-build-tree
+PASS hash-and-readline
+SKIP rpm-keypad-switch
+PASS=6 FAIL=0 SKIP=1

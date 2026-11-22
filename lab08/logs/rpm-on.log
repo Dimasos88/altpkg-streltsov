@@ -1,0 +1,206 @@
+<86>Nov 22 07:50:12 userdel[32555]: delete user 'rooter'
+<86>Nov 22 07:50:12 userdel[32555]: removed shadow group 'rooter' owned by 'rooter'
+<86>Nov 22 07:50:12 groupadd[32562]: group added to /etc/group: name=rooter, GID=1001
+<86>Nov 22 07:50:12 groupadd[32562]: group added to /etc/gshadow: name=rooter
+<86>Nov 22 07:50:12 groupadd[32562]: new group: name=rooter, GID=1001
+<86>Nov 22 07:50:12 useradd[32568]: new user: name=rooter, UID=1001, GID=1001, home=/root, shell=/bin/bash, from=none
+<86>Nov 22 07:50:12 userdel[32578]: delete user 'builder'
+<86>Nov 22 07:50:12 userdel[32578]: removed shadow group 'builder' owned by 'builder'
+<86>Nov 22 07:50:12 groupadd[32585]: group added to /etc/group: name=builder, GID=1002
+<86>Nov 22 07:50:12 groupadd[32585]: group added to /etc/gshadow: name=builder
+<86>Nov 22 07:50:12 groupadd[32585]: new group: name=builder, GID=1002
+<86>Nov 22 07:50:12 useradd[32591]: new user: name=builder, UID=1002, GID=1002, home=/usr/src, shell=/bin/bash, from=none
+<13>Nov 22 07:50:19 rpmi: libncurses6-6.5.20250705-alt1 p11+414777.100.1.1 1775807998 installed
+<13>Nov 22 07:50:19 rpmi: libtinfo-devel-6.5.20250705-alt1 p11+414777.100.1.1 1775807998 installed
+<13>Nov 22 07:50:19 rpmi: libncurses-devel-6.5.20250705-alt1 p11+414777.100.1.1 1775807998 installed
+<13>Nov 22 07:50:19 rpmi: libncursesw-devel-6.5.20250705-alt1 p11+414777.100.1.1 1775807998 installed
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /usr/src/in/srpm/lab08-autotools-1.0-alt1.src.rpm (w1.gzdio)
+Installing lab08-autotools-1.0-alt1.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /usr/src/tmp/rpmb-tmp.oVkUD9
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ rm -rf lab08-autotools-1.0
++ echo 'Source #0 (lab08-autotools-1.0.tar.gz):'
+Source #0 (lab08-autotools-1.0.tar.gz):
++ /usr/bin/gzip -dc /usr/src/RPM/SOURCES/lab08-autotools-1.0.tar.gz
++ /bin/tar -xf -
++ cd lab08-autotools-1.0
++ /bin/chmod -c -Rf u+rwX,go-w .
++ exit 0
+Executing(%build): /bin/sh -e /usr/src/tmp/rpmb-tmp.7lbsRg
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ cd lab08-autotools-1.0
++ autoreconf -fisv
+autoreconf-default: export WARNINGS=
+autoreconf-default: Entering directory '.'
+autoreconf-default: configure.ac: not using Gettext
+autoreconf-default: running: aclocal --force 
+autoreconf-default: configure.ac: tracing
+autoreconf-default: configure.ac: not using Libtool
+autoreconf-default: configure.ac: not using Intltool
+autoreconf-default: configure.ac: not using Gtkdoc
+autoreconf-default: running: /usr/bin/autoconf-2.71 --force
+autoreconf-default: running: /usr/bin/autoheader-2.71 --force
+autoreconf-default: running: automake --add-missing --force-missing
+configure.ac:6: installing './compile'
+configure.ac:5: installing './install-sh'
+configure.ac:5: installing './missing'
+Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+autoreconf-default: Leaving directory '.'
++ CFLAGS='-pipe -frecord-gcc-switches -Wall -g -O2 -flto=auto'
++ export CFLAGS
++ CXXFLAGS='-pipe -frecord-gcc-switches -Wall -g -O2 -flto=auto'
++ export CXXFLAGS
++ FFLAGS='-pipe -frecord-gcc-switches -Wall -g -O2 -flto=auto'
++ export FFLAGS
++ FCFLAGS='-pipe -frecord-gcc-switches -Wall -g -O2 -flto=auto'
++ export FCFLAGS
++ '[' -n '' ']'
+++ printf %s '-pipe -frecord-gcc-switches -Wall -g -O2 -flto=auto'
+++ sed -r 's/(^|[[:space:]]+)-[^m][^[:space:]]*//g'
++ ASFLAGS=
++ export ASFLAGS
++ export lt_cv_deplibs_check_method=pass_all
++ lt_cv_deplibs_check_method=pass_all
++ xargs -ri dirname -- '{}'
++ readlink -e -- ./configure
++ xargs -ri find '{}' -type f '(' -name config.sub -or -name config.guess ')' -printf '%h/\n'
++ sort -u
++ xargs -rn1 install -pm755 -- /usr/share/gnu-config/config.sub /usr/share/gnu-config/config.guess
++ configure_runstatedir_flags=
++ grep -qF runstatedir=DIR ./configure
++ configure_runstatedir_flags=--runstatedir=/var/run
++ ./configure --build=x86_64-alt-linux --host=x86_64-alt-linux --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/lib --localstatedir=/var/lib --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --disable-dependency-tracking --disable-silent-rules --runstatedir=/var/run --without-included-gettext --enable-keypad
+configure: WARNING: unrecognized options: --without-included-gettext
+checking for a BSD-compatible install... /usr/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for x86_64-alt-linux-gcc... x86_64-alt-linux-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-alt-linux-gcc accepts -g... yes
+checking for x86_64-alt-linux-gcc option to enable C11 features... none needed
+checking whether x86_64-alt-linux-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-alt-linux-gcc... none
+checking for initscr in -lncursesw... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for ncurses.h... yes
+checking for ncursesw/ncurses.h... yes
+checking for unistd.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for missing_symbol in -llab08_nonexistent... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --without-included-gettext
++ make -j4
+make  all-am
+make[1]: Entering directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+x86_64-alt-linux-gcc -DHAVE_CONFIG_H -I.    -Wall -Wextra -pipe -frecord-gcc-switches -Wall -g -O2 -flto=auto -c -o keys.o keys.c
+make[1]: Leaving directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+make[1]: Entering directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+x86_64-alt-linux-gcc -Wall -Wextra -pipe -frecord-gcc-switches -Wall -g -O2 -flto=auto   -o lab08-keys keys.o -lncursesw 
+make[1]: Leaving directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
++ exit 0
+Executing(%install): /bin/sh -e /usr/src/tmp/rpmb-tmp.8ecLmb
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ /bin/chmod -Rf u+rwX -- /usr/src/tmp/lab08-autotools-buildroot
++ :
++ /bin/rm -rf -- /usr/src/tmp/lab08-autotools-buildroot
++ PATH=/usr/libexec/rpm-build:/usr/src/bin:/usr/bin:/bin:/usr/local/bin:/usr/games
++ cd lab08-autotools-1.0
++ make 'INSTALL=/usr/libexec/rpm-build/install -p' install DESTDIR=/usr/src/tmp/lab08-autotools-buildroot
+make: Entering directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+make[1]: Entering directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+ /usr/bin/mkdir -p '/usr/src/tmp/lab08-autotools-buildroot/usr/bin'
+  /usr/libexec/rpm-build/install -p lab08-keys '/usr/src/tmp/lab08-autotools-buildroot/usr/bin'
+make[1]: Nothing to be done for 'install-data-am'.
+make[1]: Leaving directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+make: Leaving directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
++ /usr/lib/rpm/brp-alt
+Cleaning files in /usr/src/tmp/lab08-autotools-buildroot (auto)
+Verifying and fixing files in /usr/src/tmp/lab08-autotools-buildroot (binconfig,pkgconfig,libtool,desktop,gnuconfig)
+Checking contents of files in /usr/src/tmp/lab08-autotools-buildroot/ (default)
+Compressing files in /usr/src/tmp/lab08-autotools-buildroot (auto)
+Verifying ELF objects in /usr/src/tmp/lab08-autotools-buildroot (arch=normal,fhs=normal,lfs=relaxed,lint=relaxed,rpath=normal,stack=normal,textrel=normal,unresolved=normal)
+Splitting links to aliased files under /{,s}bin in /usr/src/tmp/lab08-autotools-buildroot
+Executing(%check): /bin/sh -e /usr/src/tmp/rpmb-tmp.fOoozx
++ umask 022
++ /bin/mkdir -p /usr/src/RPM/BUILD
++ cd /usr/src/RPM/BUILD
++ cd lab08-autotools-1.0
++ make check
+make: Entering directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+make  check-TESTS
+make[1]: Entering directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+make[2]: Entering directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+PASS: tests/notty.sh
+============================================================================
+Testsuite summary for lab08-autotools 1.0
+============================================================================
+# TOTAL: 1
+# PASS:  1
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[2]: Leaving directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+make[1]: Leaving directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
+make: Leaving directory '/usr/src/RPM/BUILD/lab08-autotools-1.0'
++ exit 0
+Processing files: lab08-autotools-1.0-alt1
+Finding Provides (using /usr/lib/rpm/find-provides)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.IcOrAA
+find-provides: running scripts (debuginfo,lib,pam,perl,pkgconfig,python,python3,shell,sysusers)
+Finding Requires (using /usr/lib/rpm/find-requires)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.QzxQ1K
+find-requires: running scripts (cpp,debuginfo,files,lib,pam,perl,pkgconfig,pkgconfiglib,python,python3,rpmlib,shebang,shell,static,symlinks,systemd-services)
+Requires: /lib64/ld-linux-x86-64.so.2, libc.so.6(GLIBC_2.2.5)(64bit), libc.so.6(GLIBC_2.3.4)(64bit), libc.so.6(GLIBC_2.34)(64bit), libncursesw.so.6()(64bit) >= set:njUvLrXkLudtjSagaXtT0UeRq3hsVaV1, libtinfo.so.6()(64bit) >= set:mjnelA2Tuq5S0DaZi2, rtld(GNU_HASH)
+Requires(rpmlib): rpmlib(SetVersions)
+Finding debuginfo files (using /usr/lib/rpm/find-debuginfo-files)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.ARDyUW
+Creating lab08-autotools-debuginfo package
+Processing files: lab08-autotools-debuginfo-1.0-alt1
+Finding Provides (using /usr/lib/rpm/find-provides)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.vbQjGY
+find-provides: running scripts (debuginfo)
+Finding Requires (using /usr/lib/rpm/find-requires)
+Executing(+autodep): /bin/sh -e /usr/src/tmp/rpmb-autodep.9LUM3R
+find-requires: running scripts (debuginfo)
+Requires: lab08-autotools = 1.0-alt1, /usr/lib/debug/lib64/ld-linux-x86-64.so.2.debug, debug64(libc.so.6), debug64(libncursesw.so.6), debug64(libtinfo.so.6)
+Wrote: /usr/src/RPM/SRPMS/lab08-autotools-1.0-alt1.src.rpm (w2.lzdio)
+Wrote: /usr/src/RPM/RPMS/x86_64/lab08-autotools-1.0-alt1.x86_64.rpm (w2.lzdio)
+Wrote: /usr/src/RPM/RPMS/x86_64/lab08-autotools-debuginfo-1.0-alt1.x86_64.rpm (w2.lzdio)
+6.14user 9.68system 0:20.12elapsed 78%CPU (0avgtext+0avgdata 23360maxresident)k
+53984inputs+5904outputs (172major+408352minor)pagefaults 0swaps
